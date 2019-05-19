@@ -1,0 +1,117 @@
+body {
+    background-color: ivory;
+}
+
+h1 {
+    color: teal;    
+}
+
+h2 {
+    margin-left: 40px;
+    padding: 10px;
+}
+
+button {
+    float: right;
+}
+
+.fixed-center {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 3px;     
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.img
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 3px;     
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.landing-image {    
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.visual-image {
+    max-width: 50%;  
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron {
+    background-color: white;
+    margin-top: 5rem;    
+}
+
+.jumbotron, .card-deck, .alert {    
+    margin-left: 50px;
+    margin-right: 50px;    
+}
+
+.card-header{
+    height: 40px;;
+}
+
+hr {
+    border: 2px solid rgb(6, 148, 148);
+    border-radius: 5px;
+}
+
+.separator-vis {
+    border: 1px solid rgb(6, 148, 148);
+}
+
+.my-footer {
+    background-color: gray;
+}
+
+.p-footer {
+    text-align: center;
+}
+
+
+#source-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .img-visual {
+        width: 100px;
+        height: 50px;
+    }
+
+    .h1size {
+        font-size: 25px;
+    }
+
+    .h2size {
+        font-size: 22px;
+    }
+
+    .h4size {
+        font-size: 15px;
+    }
+  }
+  

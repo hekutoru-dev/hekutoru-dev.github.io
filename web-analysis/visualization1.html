@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- --allow-file-access-from-files -->
+<html lang="es" id="visualization1-page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tumor Reponse</title>
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+        <link rel="stylesheet" href="theme/bootstrap.min.css" >
+        <link rel="stylesheet" href="theme/setstyles.css" >        
+        
+     </head>
+
+     
+    <body>  
+        
+        <!--Navigation bar-->
+        <!-- bg-primary bg-secondary bg-success bg-info bg-warning bg-danger -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+            <!-- Navbar Brand: Icon -->
+            
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/db.png" width="30" height="30" role="img"> &nbsp;&nbsp;Data Visualization                                                                                             
+                </a> 
+                
+                <!-- <a class="navbar-brand" href="index.html">&nbsp;&nbsp;Data Visualization</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            <div class="collapse navbar-collapse bd.navbar-nav flex-row" id="navbarColor02">
+                <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                            <a class="dropdown-item" href="#">&nbsp;Tumor Response</a>
+                            <a class="dropdown-item" href="visualization2.html">&nbsp;Metastatic Changes</a>
+                            <a class="dropdown-item" href="visualization3.html">&nbsp;Mice Survival</a>
+                            <a class="dropdown-item" href="visualization4.html">&nbsp;Summary Bars</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="comparisons.html">Comparison</a>
+                            <a class="dropdown-item" href="data_page.html">Data</a>
+                            <a class="dropdown-item" href="about.html">About</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparison</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                            <a class="dropdown-item" href="clinical_data.htm">Clinical Data</a>
+                            <a class="dropdown-item" href="mouse_data.htm">Mouse Data</a>    
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>  
+            </div>
+        </div>  
+        
+        </nav> <!-- end navigationbar -->      
+
+        <!-- Main Grid Container -->
+        <div class="container">
+
+            <!-- Contents of the page -->
+            <div class="jumbotron border-info"  id="project-explanation">                                    
+                    
+                <h1 class="display-4 text-info h1size">Tumor Response</h1>
+                <hr class='my-4'>
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target=".visualization-source">?</button>
+                <img class='fixed-center visual-image border' src="img/tumor_response.png">
+
+                <hr class="my-4 separator-vis">
+                <!-- Short explanation of graph -->
+                <p>From the graph above we can observe that Capomulim had the best effective response than the rest of the observable tratments. 
+                During the pass of the days it reduce meaningfully the tumor volume in the mice.</p>
+                <p>
+                The rest of the observable treatments showed that the tumor increased its volume, 
+                but Ketapril showed the the worst response of those treatments, even showing an apparently 
+                increased behavior during the last 5 days.</p>                    
+                
+            </div> <!-- end jumbotron, main page explanation -->
+
+            <!-- Block for Visualization links -->
+            <div class="alert alert-dismissible alert-info">                
+                <h2 class="alert-heading h2size">Visualizations</h2>
+                
+
+                <div class="container">
+                    <div class="row">                     
+
+                        <div class="col-md-3">
+                            <h6>Home</h6>
+                            <a href="index.html">                        
+                                <img src="img/home.jpg" class="img-thumbnail" alt="...">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">  
+                            <h6>Metastatic Changes</h6>                            
+                            <a href="visualization2.html">                        
+                                <img src="img/metastatic_spread.png" class="img-thumbnail" alt="...">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <h6>Mice Survival</h6>                             
+                            <a href="visualization3.html">                        
+                                <img src="img/survival_mice.png" class="img-thumbnail" alt="...">
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-3"> 
+                            <h6>Summary Bars</h6>                            
+                            <a href="visualization4.html">                        
+                                <img src="img/summary_bar.png" class="img-thumbnail" alt="...">
+                            </a>
+                        </div>  
+
+                </div> <!-- end card-deck -->
+                </div>
+            </div> <!-- end Block for Visualization links -->
+
+        </div> <!-- end main-contanier -->
+        
+        <!-- Footer -->
+        <footer class="my-footer">
+            
+            <div class="card-footer ">                
+                <p class="p-footer">
+                    Hector H Padilla<br>
+                    Data Analytics Bootcamp 2019
+                </p>                          
+            </div>
+        </footer>
+        
+        
+        <!-- ===================================== Dialogs ======================================= -->        
+        <div class="modal visualization-source" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content border-info">
+                <div class="modal-header border-info">
+                    <h5 class="modal-title text-info">Tumor Response Head DF</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body lead">
+                    <p>Data Frame head for the tumor responses graph.</p>
+                    <img src="img/tumor_resp_df.jpg" class="img-thumbnail">
+                </div>
+                <div class="modal-footer border-info">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>                    
+                </div>
+                </div>
+            </div>
+        </div> <!-- end modal dialog -->
+
+    </body>
+</html>
+

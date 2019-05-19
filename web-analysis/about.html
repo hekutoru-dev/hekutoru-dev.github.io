@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- --allow-file-access-from-files -->
+<html lang="es" id="about-page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bootstrap Visualization Data</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+        <link rel="stylesheet" href="theme/bootstrap.min.css" >
+        <link rel="stylesheet" href="theme/setstyles.css" >                
+     </head>
+
+     
+    <body>  
+        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+                    <!-- Navbar Brand: Icon -->
+                    <a class="navbar-brand" href="#">
+                            <img src="img/db.png" width="30" height="30" role="img">          
+                            &nbsp;&nbsp;Data Visualization                            
+                    </a> 
+        
+                    <!-- <a class="navbar-brand" href="index.html">&nbsp;&nbsp;Data Visualization</a>-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse bd.navbar-nav flex-row" id="navbarColor02">
+                        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                                <a class="dropdown-item" href="visualization1.html">&nbsp;Tumor Response</a>
+                                <a class="dropdown-item" href="visualization2.html">&nbsp;Metastatic Changes</a>
+                                <a class="dropdown-item" href="visualization3.html">&nbsp;Mice Survival</a>
+                                <a class="dropdown-item" href="visualization4.html">&nbsp;Summary Bars</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="comparisons.html">Comparison</a>
+                                <a class="dropdown-item" href="data_page.html">Data</a>
+                                <a class="dropdown-item" href="#">About</a>
+                            </div>
+                        </li>
+        
+                        <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparison</a>
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data<span class="sr-only">(current)</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                <a class="dropdown-item" href="clinical_data.htm">Clinical Data</a>
+                                <a class="dropdown-item" href="mouse_data.htm">Mouse Data</a>    
+                            </div>
+                        </li>
+        
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>            
+                </div>
+            </div> 
+                
+        
+                </nav> <!-- end navigationbar -->       
+
+        <!-- Main Grid Container -->
+        <div class="container">
+
+            <!-- Contents of the page -->
+            <div class="jumbotron border-info"  id="project-explanation">
+                <div class="row">
+
+                    <div class="col-7">
+                        <h1 class="display-4 h1size">About</h1>
+                        <p class="lead">This site was built using Bootstrap and using the help 
+                            of the themes from <a href="https://bootswatch.com/" class="text-info">Bootswatch</a>.
+                            
+                        </p>
+                        <hr class="my-6">
+                        <p>This website shows the results obtanied from the data analysis of a dataset.</p>
+                        <p>Analysis was done by using Python tools like Pandas while plots were done using Matplotlib.</p>                        
+                    </div>
+
+                    <!-- Insert a main image for description -->
+                    <div class="col-5">                        
+                        <img class="fixed-center landing-image" src="img/about_data.gif" alt="Main Image">
+                    </div>
+
+                </div>                
+            </div> <!-- end jumbotron, main page explanation -->
+
+        </div> <!-- end main-contanier -->
+        
+
+
+        <!-- Footer -->
+        <footer class="my-footer">
+            
+            <div class="card-footer ">                
+                <p class="p-footer">
+                    Hector H Padilla<br>
+                    Data Analytics Bootcamp 2019
+                </p>                          
+            </div>
+        </footer>
+        
+
+
+    </body>
+</html>
