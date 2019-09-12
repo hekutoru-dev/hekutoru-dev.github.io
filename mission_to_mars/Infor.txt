@@ -1,4 +1,0 @@
-Mission to Mars (Scrapping)
-
-This project consists in scraping different websites containing latest information
-on the Mars explorations and studies.
